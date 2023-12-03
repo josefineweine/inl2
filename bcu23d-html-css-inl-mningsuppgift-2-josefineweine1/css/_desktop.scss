@@ -1,0 +1,289 @@
+
+
+aside:last-of-type {
+    display: block;
+}
+
+button,
+.menu-checkbox {
+    display: none;
+}
+
+
+header {
+    position: fixed;
+    background-color: black;
+    width: 100vw;
+    height: 62px;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+nav {
+    top: 0;
+    height: 62px;
+    background-color: black;
+    opacity: 1;
+    visibility: visible;
+    text-align: unset;
+    z-index: 4;
+}
+
+nav .ul-index-about,
+nav .ul-invest-contact {
+    display: flex;
+    flex-direction: row;
+    height: 62px;
+    width: 400px;
+    top: 2px;
+    align-items: center;
+    z-index: 3;
+}
+
+nav .ul-index-about {
+    left: 10%;
+    position: absolute;
+}
+
+nav .ul-invest-contact {
+    right: 10%;
+    position: absolute;
+}
+
+ul li {
+    font-family: "Rubik", sans-serif;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    min-width: 100px;
+    height: 62px;
+    z-index: 4;
+    color: white;
+    transform: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li a {
+    font-size: 1.3rem;
+    text-transform: unset;
+}
+
+.ul-index-about li:not(:last-child)::after {
+    position: absolute;
+    content: " | ";
+    padding: 0 10px;
+    left: 30%;
+}
+
+.ul-invest-contact li:not(:last-child)::after {
+    position: absolute;
+    content: " | ";
+    padding: 0 10px;
+    left: 31%;
+}
+
+/************************************/
+/**************First section*********/
+/************************************/
+
+.img-coins {
+    width: 100vw;
+    height: 100vh;
+    min-height: 800px;
+}
+
+section .border-coins {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+section .coins-text {
+    font-size: clamp(6rem, 4vh, 3rem);
+}
+
+.home,
+.about-us,
+.invest,
+.contact {
+    background-image: none;
+    position: fixed;
+    text-indent: 0;
+    color: white;
+    z-index: 3;
+}
+
+/************************************/
+/**************Secound section*******/
+/************************************/
+
+.secound-s {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    background-color: #363636;
+}
+
+.first-aside {
+    position: relative;
+    width: 40vw;
+    height: auto;
+    float: left;
+}
+
+.first-aside>img {
+    position: relative;
+    filter: brightness(100%);
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.first-aside div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 30px;
+    left: 110%;
+    width: 1000px;
+    height: 400px;
+}
+
+.first-aside div img {
+    display: inline-block;
+    width: 250px;
+    height: 350px;
+    top: unset;
+    left: 60%;
+    border-radius: 0.5rem;
+    z-index: 2;
+    transform: unset;
+}
+
+.IPO-plus-img .IPO-text {
+    display: inline-block;
+    font-size: 1rem;
+    width: 580px;
+    height: 300px;
+    margin: unset;
+    left: 0;
+}
+
+.secound-aside {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    width: 1000px;
+    height: 350px;
+}
+
+.secound-aside img {
+    display: inline-block;
+    width: 250px;
+    height: 350px;
+    margin-right: 30px;
+    border-radius: 0.5rem;
+}
+
+.secound-aside .expanded-text {
+    display: inline-block;
+    color: white;
+    font-size: 1rem;
+    width: 580px;
+    height: 300px;
+    transform: translateY(-30%);
+}
+
+
+
+/************************************/
+/**************COOOOOKKKIIIEE********/
+/************************************/
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #ebff3c;
+    color: white;
+    padding: 1rem 0;
+    z-index: 5;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cookie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem;
+    width: 100%;
+    height: 80px;
+    background-color: #ebff3c;
+    color: white;
+    z-index: 5;
+    font-family: "Arial", sans-serif;
+}
+
+.cookie p {
+    position: absolute;
+    margin: 0;
+    font-size: 1rem;
+    color: black;
+    left: 3%;
+    flex: 1;
+    margin-right: 1rem;
+    max-width: 45%;
+}
+
+footer div button.accept,
+footer div button.decline {
+    display: flex;
+    padding: 0.1rem 1.6rem;
+    margin: 0 0.5rem;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-size: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: white;
+    z-index: 5;
+    min-width: 300px;
+    height: auto;
+    top: unset;
+    left: unset;
+    pointer-events: unset;
+}
+
+footer div button.accept {
+    background-color: #6c1f41;
+    right: 26%;
+}
+
+footer div button.decline {
+    background-color: #4a2bd5;
+    right: 8%;
+}
+
+button.accept:hover,
+button.decline:hover {
+    opacity: 0.8;
+}

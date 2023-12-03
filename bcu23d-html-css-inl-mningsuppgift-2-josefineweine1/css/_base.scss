@@ -1,0 +1,32 @@
+body,
+html {
+    font-family: Arial, sans-serif;
+}
+
+section {
+    max-width: 100%;
+    min-height: 800px;
+    position: relative;
+    overflow: hidden;
+}
+
+section img {
+    position: relative;
+    width: 900px;
+    height: 810px;
+    object-fit: cover;
+    object-position: left;
+}
+
+h3,
+h4 {
+    display: none;
+}
+
+aside:last-of-type {
+    display: none;
+}
+
+.cookie {
+    display: none;
+}
